@@ -5,7 +5,8 @@ export default function Nav(props) {
   return (
     <nav className="Nav">
       <Link to={"/bookmarks"}>Bookmark List</Link>{" "}
-      <Link to={"/add-bookmark"}>Add Bookmark</Link>
+      <Link to={"/add-bookmark"}>Add Bookmark</Link>{" "}
+      <Link to={`/edit/${props.id}`}>Edit Bookmark</Link>
     </nav>
   );
 }

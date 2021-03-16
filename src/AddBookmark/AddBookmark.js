@@ -1,6 +1,6 @@
 import React, { Component } from  'react';
 import PropTypes from 'prop-types';
-import BookmarksContext from '../BookmarksContext';
+import BookmarksContext from '../bookmark-context/BookmarksContext';
 import config from '../config'
 import './AddBookmark.css';
 
@@ -51,7 +51,7 @@ class AddBookmark extends Component {
         url.value = ''
         description.value = ''
         rating.value = ''
-        this.context.addBookmark(data)
+        this.context.insertBookmark(data)
         this.props.history.push('/')
       })
       .catch(error => {
