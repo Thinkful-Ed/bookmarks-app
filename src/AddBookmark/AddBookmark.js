@@ -31,6 +31,7 @@ class AddBookmark extends Component {
       description: description.value,
       rating: rating.value,
     }
+    console.log(bookmark)
     this.setState({ error: null })
     fetch(config.API_ENDPOINT, {
       method: 'POST',

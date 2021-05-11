@@ -94,7 +94,7 @@ class EditBookmark extends Component {
       })
       .then(() => {
         this.resetFields(newBookmark)
-        this.context.updateBookmark(newBookmark)
+        this.context.editBookmark(newBookmark)
         this.props.history.push('/')
       })
       .catch(error => {

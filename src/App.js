@@ -93,7 +93,6 @@ class App extends Component {
             />            
           </div>
         </BookmarksContext.Provider>
-        <Rating />
       </main>
     );
   }

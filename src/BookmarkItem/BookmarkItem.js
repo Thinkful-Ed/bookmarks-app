@@ -15,17 +15,15 @@ function deleteBookmarkRequest(bookmarkId, callback){
     }
   })
     .then(res => {
-      if (!res.ok) {
-        return res.json().then(error =>  Promise.reject(error))
-      }
-      return res.json()
+      window.location = '/'
+      // if (!res.ok) {
+      //   return res.json().then(error =>  Promise.reject(error))
+      // }
+      // return res
     })
-    .then(data => { //call the callback when the request is successful - this is where the App component can remove it from state
-      callback(bookmarkId)
-    })
-    .catch(error => {
-      console.error(error)
-    })
+    // .then(data => { //call the callback when the request is successful - this is where the App component can remove it from state
+    //   callback(bookmarkId)
+    // })
 }
 
 export default function BookmarkItem(props) {
