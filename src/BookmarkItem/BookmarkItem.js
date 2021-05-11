@@ -77,7 +77,7 @@ BookmarkItem.propTypes = {
   title: PropTypes.string.isRequired,
   url: PropTypes.string.isRequired,
   desciption: PropTypes.string,
-  rating: PropTypes.number.isRequired,
+  // rating: PropTypes.number.isRequired,
   onClickDelete: PropTypes.func,
 };
 
